@@ -36,7 +36,7 @@ export default HelloWorldPlugin;
 3.  Dynamic Injection via File System: Based on the contextual determination, the plugin uses file system operations (mkdir, writeFile) to place its specialized components. This ensures that context-specific skills are isolated but discoverable:
     ```ts
     await mkdir(emojiDir, {recursive: true}); // eg/emoji/
-    await writeFile(skillPath, EMOJI_SKILL_MD); eg/emoji/SKILL.md
+    await writeFile(skillPath, EMOJI_SKILL_MD); // eg/emoji/SKILL.md
     ```
 4.  Configuration Overrides: The plugin then injects its custom definitions into the primary configuration structure. This involves merging user-defined or default values with the plugin's specific definitions for agents, commands, and skills. For instance, it updates the agent configuration to include a specific prompt and mode:
     ```ts
