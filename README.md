@@ -2,6 +2,8 @@
 
 How to share agents, command and skills using just a plugin for OpenCode.
 
+> See full plugin example: [plugins/hello-world.ts](https://github.com/m10rten/opencode-potato-plugin/blob/main/plugins/hello-world.ts)
+
 ## The Power of Plugin Architecture: Sharing Intelligence in AI Workflows
 
 Sharing agents, commands, and skills through plugins is a powerful architectural pattern that transforms how complex AI workflows are built and deployed. It shifts the paradigm from monolithic setups to a modular, reusable ecosystem.
