@@ -59,5 +59,14 @@ export default HelloWorldPlugin;
         },
     };
     ```
+    And for skills you pass the newly created skills dir:
+    ```ts
+    config.skills = {
+        ...skills,
+        paths: [...existingSkillPaths, skillsDir],
+    };
+    ```
+
+> Do note that the types for this may not be supported 100%, you might require some `as Record<...>` or even `as {skills: ...}`.
     
 This approach creates a highly flexible system. By separating the definition of intelligence (skills) from the logic of the application (agents/commands), you enable seamless, localized, and highly reusable functionality across any project.
